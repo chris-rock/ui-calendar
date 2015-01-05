@@ -243,6 +243,7 @@ angular.module('ui.calendar', [])
 
         scope.init = function(){
           calendar.fullCalendar(options);
+          window.calendar = calendar;
         };
 
         eventSourcesWatcher.onAdded = function(source) {
